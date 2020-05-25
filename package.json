@@ -12,7 +12,8 @@
 	"module": "dist/VueStars.common.min.js",
 	"dependencies": {
 		"core-js": "^3.6.4",
-		"vue": "^2.6.11"
+		"vue": "^2.6.11",
+		"vue-no-ssr": "^0.2.2"
 	},
 	"devDependencies": {
 		"@vue/cli-plugin-babel": "^4.3.1",
