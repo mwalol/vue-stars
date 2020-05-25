@@ -1,4 +1,5 @@
 <template>
+<no-ssr>
 	<div ref="ratingEl" class="vue-stars" :class="{ readonly: readonly, notouch: notouch }" :style="mapCssProps">
 		<input :id="name + '0'" :checked="value === 0" :name="name" type="radio" value="0" />
 		<template v-for="x in max">
@@ -22,10 +23,15 @@
 			/>
 		</template>
 	</div>
+</no-ssr>
 </template>
 <script>
+import NoSSR from 'vue-no-ssr'
 export default {
 	name: "VueStars",
+	components: {
+    		'no-ssr': NoSSR,
+  	},
 	props: {
 		max: { type: Number, required: false, default: 5 },
 		value: { type: Number, required: false, default: 0 },
