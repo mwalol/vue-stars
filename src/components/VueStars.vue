@@ -30,7 +30,7 @@ import NoSSR from 'vue-no-ssr'
 export default {
 	name: "VueStars",
 	components: {
-    		'no-ssr': NoSSR,
+    		'no-ssr': NoSSR
   	},
 	props: {
 		max: { type: Number, required: false, default: 5 },
